@@ -1,10 +1,9 @@
 const products = [
-    {id:1, name:'marker', qty:100, price:15}
-    {id:2, name:'duster', qty:50, price:10}
+    {id:1, name:'marker', qty:100, price:15},
+    {id:2, name:'duster', qty:50, price:10},
     
 ]
 let nextid = 3;
-const getAllProducts = () => {
+export const getAllProducts = () => {
     return products;
-    
 }

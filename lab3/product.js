@@ -7,3 +7,4 @@ let nextid = 3;
 export const getAllProducts = () => {
     return products;
 }
+

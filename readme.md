@@ -3,6 +3,7 @@ localhost - URL
 
 ctrl+c - stop the server
 
+
 every request from client has a pair of {request,response}
 
 ## npm - node package manager
@@ -44,11 +45,24 @@ The content type and status code can be send back to client by two ways.
 1. res.writeHead
 2. res.setHeader
 3. res.statusCode
-server return data only not html context because html content will be written by content devloper. the data is JSON format
-JASON always store data in key value pair enclosed by {} array can be [] one pair of {} will represent one obj and its property will be sepreated by , 
+
+## JSON 
+server returns data only not html content because html content will be written by content developer. The data is in JSON format. JSON always stores data in key-value pair enclosed by curly bracket{}. Array can be stored by square bracket[]. one p-air of curly bracket od curly brancket represent one object and its properties will be seperated by comma(,). 
 ```
-{id : 1,
-name : 'mobile'
-price : 25000,
+{id:1,
+name: 'Mobile',
+price: 25000,
+rating:4.5,
+review:200
 }
 ```
+
+# for get request
+# GET -->
+- no parameters pass to the server when we receive all the items.
+
+# post --> 
+- to add records we pass the value from body section in JSON format of api tester (echo api).
+
+# delete --> 
+- to delete any product we pass parameter that is id of the product from url./
